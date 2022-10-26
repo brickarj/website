@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Psychologue</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+		
+
+			<header class="page_header header_white table_section columns_padding_0 toggler-xs-right">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-sm-5">
+							<a href="./" class="logo">
+								Psychologue
+							</a>
+							<!-- header toggler -->
+							<span class="toggle_menu visible-xs">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-6 col-sm-2 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Home</a>
+
+									</li>
+
+									<!-- blog -->
+									<li>
+										<a href="blog.html">Blog</a>
+
+									</li>
+									<!-- eof blog -->
+
+									<li>
+										<a href="about.html">About</a>
+
+										<!-- eof mega menu -->
+									</li>
+									<!-- eof features -->
+
+
+
+									<!-- eof pages -->
+
+									<!-- gallery -->
+									<li>
+										<a href="faq.html">FAQ</a>
+									</li>
+									<!-- eof Gallery -->
+
+									<!-- contacts -->
+									<li>
+										<a href="contact.html">Info/Contact</a>
+
+									</li>
+									<!-- eof contacts -->
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu hidden-xs">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-3 col-sm-5 text-right ">
+							<div class="page_social_icons divided_content">
+								<span>
+									<a class="social-icon soc-linkedin" href="https://fr.linkedin.com/in/romanebricka" target="_blank" rel="noopener noreferrer" title="LinkedIn"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs ds background_cover section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>About</h2>
+							<ol class="breadcrumb divided_content wide_divider">
+								<li>
+									<a href="./">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Pages</a>
+								</li>
+								<li class="active">About</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_100 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<img src="images/me.jpeg" alt="" />
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<h2 class="section_header">A propos de moi
+							</h2>
+							<hr class="divider_30_1">
+							<p style=" text-align: justify;text-justify: inter-word;">
+								Psychologue clinicienne, je suis diplômée du Master de Psychologie clinique - pratiques
+								psychothérapeutiques (Université Grenoble Alpes). Je propose des consultations en
+								cabinet sur Paris (CPNDO, Paris 14), ou en visioconférence. J’utilise principalement l’approche
+								TCCE (Thérapie cognitives Comportementales et Emotionnelles).
+
+								<p style=" text-align: justify;text-justify: inter-word;">
+									J’ai à coeur de faire de la psychothérapie un espace bienveillant dans lequel peut
+									se mettre en place une relation de collaboration avec la personne. Cela signifie que
+									nous travaillons ensemble autour d’un objectif commun : l’amélioration de votre
+									qualité de vie et de votre bien-être. </p>
+
+								<p style=" text-align: justify;text-justify: inter-word;">
+									J’ai auparavant exercé pendant deux ans en service médico-social spécialisé dans la
+									prise en charge de la schizophrénie chez le jeune adulte, ainsi qu’en Centre de
+									Réhabilitation Cognitive et Sociale (Hôpital Albert Chenevier), auprès de personnes
+									souffrant de différents troubles psychiques.</p>
+								<p style=" text-align: justify;text-justify: inter-word;">
+
+									En parallèle des consultations en libéral, je travaille aujourd’hui dans le champ de
+									la clinique du travail, au sein d’un organisme dédié à l’accompagnement
+									psychologique d’employés et de leur famille.</p>
+							</p>
+							<ul class="list1 no-bullets playfair fontsize_16 topmargin_40">
+								<li>
+									<div class="row columns_margin_0 columns_padding_0">
+										<div class="col-xs-5 col-sm-6">
+											<div class="media small-teaser topmargin_0">
+												<div class="media-left media-middle">
+													<i class="fa fa-pencil highlight"></i>
+												</div>
+												<div class="media-body media-middle">
+													Numéro ADELI
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-7 col-sm-6">
+											929342350
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+
+						</div>
+					</div>
+				<br>
+				<br>
+					<div class="row">
+						<h2 class="section_header">Mon approche 
+						</h2>
+						<hr class="divider_30_1">
+						<p style=" text-align: justify;text-justify: inter-word;">
+							En cours de spécialisation à l’AFTCC (Association Française des TCC), j’utilise
+							principalement les Thérapies Cognitives Comportementales et Emotionnelles (TCCE) et
+							notamment l’ACT (Thérapie d’Acceptation et d’Engagement) pour accompagner les personnes
+							rencontrant des difficultés psychologiques vers un mieux être. Je suis aussi formée à
+							l’Education Thérapeutique et à l’Entretien Motivationnel, je fais le choix de favoriser ces
+							approches qui me permettent de mettre la relation et le travail de collaboration avec la
+							personne au centre de ma pratique clinique.
+						</p>
+				</div>
+			</section>
+
+	
+
+			 
+			
+			<section  class="cs main_color2 parallax page_testimonials section_padding_75">
+				<div class="container">
+					<div class="row">
+						<h2 class="section_header">Mes formations complémentaires
+						</h2>
+						<ul>
+							<li>
+								<p> <strong>Formation de spécialisation en TCC </strong>sur 3 ans (AFTCC) | En cours </p>
+							</li>
+							
+							<li>
+								<p> <strong> Formation à l’ETP </strong> (éducation thérapeutique du patient) 2022 - Centre de formation continue de l’AP-HP</p>
+							</li>
+							<li>
+								<p> <strong>Formation à la thérapie ACT </strong>	 (thérapie d’acceptation et d’engagement)  - (par le Pr JL Monestes) | 2020 et 2022 </p>
+							</li>
+							<li>
+								<p> <strong> Formation de base à l'entretien motivationnel </strong>(AFDEM) | 2021 </p>
+							</li>
+							<li>
+								<p> <strong> Formation au programme BREF </strong> (CH le Vinatier) | 2021 Programme de psychoéducation à destination des aidants de personnes souffrant de troubles psychiatriques</p>
+							</li>
+
+							<li>
+								<p> <strong> Formation au programme PEPS </strong>(ForPEPS) | 2020  Promouvoir les Emotions Positives dans la Schizophrénie (Programme visant à l’amélioration de la symptomatologie négative dans la schizophrénie, notamment le ressenti et l’expression des émotions agréables et du plaisir)</p>
+							</li>
+	
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="services" class="ls section_padding_top_130 section_padding_bottom_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">Quand et pourquoi consulter ? </h2>
+							<p style="color: black">
+								Consulter un psychologue et s’engager en psychothérapie peut se faire à tout moment de
+								la vie, dès lors que l’on en ressent le besoin. Cela peut par exemple être le cas
+								lorsque l’on traverse des questionnements ou des épreuves de vie difficiles, que
+								certains aspects de notre fonctionnement nous font souffrir, ou qu’un trouble psychique
+								vient impacter notre qualité de vie… <br>
+								<br>Quelles que soit les difficultés rencontrées, vous serez reçus et accompagnés dans
+								la bienveillance. <br>
+								<br>
+								<b>Je reçois en psychothérapie notamment pour les problématiques suivantes :</b>
+							</p>
+						</div>
+					</div>
+					<div class="row columns_padding_0 columns_margin_0 fontsize_16">
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/relationship.png" alt="" />
+								<h4>
+									<a href="service-single.html">Burn-out</a>
+								</h4>
+								<p>
+									Epuisement professionnel
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/depression.png" alt="" />
+								<h4>
+									<a href="service-single.html">Troubles de l’humeur</a>
+								</h4>
+								<p>
+									Dépression, bipolarité
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/feelings.png" alt="" />
+								<h4>
+									<a href="service-single.html">Estime de soi et affirmation de soi</a>
+								</h4>
+								<p>
+									Difficultés liées à l’estime de soi et à l’affirmation de soi
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/conflicting.png" alt="" />
+								<h4>
+									<a href="service-single.html">Troubles du spectre de la schizophrénie</a>
+								</h4>
+								<p>
+									Schizophrénie, trouble schizo-affectif, personnalité schizotypique
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 clear-lg clear-md clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/meditation.png" alt="" />
+								<h4>
+									<a href="service-single.html">Gestion du stress et de l’anxiété - troubles
+										anxieux</a>
+								</h4>
+								<p>
+									Anxiété généralisée, anxiété sociale, phobies, agoraphobie, attaques de panique...
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 clear-sm">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/mind.png" alt="" />
+								<h4>
+									<a href="service-single.html">Trouble Obsessionnel Compulsif</a>
+								</h4>
+								<p>
+									TOC - phobies d’impulsions
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/mental.png" alt="" />
+								<h4>
+									<a href="service-single.html"> Soutien pour les proches - aidants</a>
+								</h4>
+								<p>
+									Soutien et guidance à destination des aidants ayant un proche souffrant d’un trouble
+									psychique
+									.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="with_padding text-center teaser hover_shadow">
+								<img src="images/service-icons/relaxation.png" alt="" />
+								<h4>
+									<a href="service-single.html">Soutien psychologique </a>
+								</h4>
+								<p>
+									Difficultés d’adaptation face à une période de changement ou à des événements de vie
+									difficiles
+								</p>
+							</div>
+						</div>
+
+
+						<div class="col-md-12">
+							<div class="with_padding text-center teaser hover_shadow">
+								<p style="color: black">
+									Notre mal-être peut s’exprimer sous de nombreuses formes et il est souvent difficile
+									d’arriver à poser des mots sur ce qui nous arrive. N’hésitez donc pas à me contacter
+									même si vous ne vous reconnaissez pas dans les problématiques ci-dessus. Les
+									premiers entretiens nous permettront d’échanger autour de votre situation et de
+									votre demande afin de mieux déterminer ensemble vos besoins en terme de suivi
+									psychologique.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer cs main_color2 table_section section_padding_50 columns_padding_0">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-4 col-sm-push-4 text-center">
+							<a href="./" class="logo medium text-shadow">
+								Psychologue Psychothérapeute
+							</a>
+						</div>
+
+						<div class="col-sm-4 col-sm-pull-4 text-center text-sm-left text-md-left">
+							<div class="widget widget_nav_menu greylinks">
+
+								<ul class="menu divided_content wide_divider">
+									<li class="">
+										<a href="./">Accueil</a>
+									</li>
+									<li class="">
+										<a href="about.html">About</a>
+									</li>
+						
+								</ul>
+
+							</div>
+						</div>
+
+						<div class="col-sm-4 text-center text-sm-right text-md-right">
+							<div class="widget widget_nav_menu greylinks">
+
+								<ul class="menu divided_content wide_divider">
+					
+									<li class="">
+										<a href="blog.html">Blog</a>
+									</li>
+									<li class="">
+										<a href="contact.html">Info/Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<section class="cs main_color2 page_copyright section_padding_15">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text">&copy; 2022 Psychology and Counseling. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
